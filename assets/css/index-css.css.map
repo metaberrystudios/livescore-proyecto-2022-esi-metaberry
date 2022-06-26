@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "index-css.sass"
-    ],
-    "names": [],
-    "file": "index-css.css"
-}
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAQ,gHAAA","file":"index-css.css"}

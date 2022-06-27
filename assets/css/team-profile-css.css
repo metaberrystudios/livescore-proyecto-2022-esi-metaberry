@@ -152,6 +152,160 @@ footer .copyright {
   margin: 0;
 }
 
+.innerNav {
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 1.5% 3%;
+  border-bottom: 1px solid black;
+}
+.innerNav ul {
+  display: flex;
+  align-items: center;
+}
+.innerNav ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-left: 20%;
+  text-align: center;
+  height: 5vh;
+}
+.innerNav ul li:hover {
+  border-bottom: 3px black solid;
+}
+
+.display {
+  display: flex;
+}
+.display .renderArea {
+  width: 60%;
+  background-color: var(--gray);
+}
+.display .renderArea .card {
+  margin: 4% 5%;
+  width: 35%;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 0 0 3% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(-10px 10px 10px var(--shade-purple));
+}
+.display .renderArea .card .title {
+  border-radius: 20px 20px 0 0;
+  padding: 3% 5%;
+  width: 90%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 2;
+}
+.display .renderArea .card .title p {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.display .renderArea .card .title .minuto {
+  font-weight: 500;
+}
+.display .renderArea .card p.info {
+  padding: 3% 5%;
+  font-size: 1.2em;
+}
+.display .sideData {
+  max-width: 39%;
+  padding-left: 1%;
+}
+.display .sideData .about {
+  padding: 3% 5%;
+  height: 25vh;
+}
+.display .sideData .about h3 {
+  display: flex;
+  align-items: center;
+}
+.display .sideData .about h3 span {
+  margin-left: 1%;
+  font-weight: 300;
+}
+.display .sideData .about p {
+  width: 70%;
+}
+.display .bet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.display .bet .vs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.display .bet .vs p {
+  margin: 4%;
+  font-weight: 700;
+}
+.display .bet button {
+  border: 1px solid var(--main-purple);
+  background-color: var(--main-purple);
+  filter: drop-shadow(-5px 10px 10px var(--shade-purple));
+  color: var(--white);
+  border-radius: 10px;
+  padding: 1% 3%;
+  transition: 0.5s;
+  margin: 5%;
+}
+.display .bet button:hover:hover {
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  color: var(--black);
+  filter: none;
+  border-radius: 10px;
+}
+.display .post {
+  padding: 1%;
+  border-top: 1px solid black;
+}
+.display .post .cta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.display .post form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.display .post form img {
+  width: 7%;
+  border-radius: 100%;
+  margin: 2%;
+}
+.display .post form input {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 30%;
+}
+.display .post form button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.display .post form button span {
+  font-weight: 300;
+}
+.display .post form button:hover {
+  transition: 0.2s;
+  transform: scale(1.2);
+}
+
 .teamDisplay {
   width: 100vw;
   height: 20vh;
@@ -201,4 +355,50 @@ footer .copyright {
 
 .display {
   display: flex;
+}
+.display .renderArea {
+  width: 60%;
+  background-color: var(--gray);
+}
+.display .renderArea .card {
+  margin: 4% 5%;
+  width: 35%;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 0 0 3% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(-10px 10px 10px var(--shade-purple));
+}
+.display .renderArea .card .title {
+  border-radius: 20px 20px 0 0;
+  padding: 3% 5%;
+  width: 90%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+}
+.display .renderArea .card .title .title2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+}
+.display .renderArea .card .title .title2 p {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.display .renderArea .card .title .title2 p:last-of-type {
+  font-size: 1em;
+  font-weight: 400;
+}
+.display .renderArea img {
+  border-radius: 100%;
+  outline: 1px black solid;
+  height: 8vh;
 }/*# sourceMappingURL=team-profile-css.css.map */

@@ -1,1 +1,64 @@
 @import 'main.scss';
+
+.hero-section{
+
+    width: 100%;
+    height: calc(95vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10% 0;
+
+    .hero-section-text{
+
+        width: 30%;
+
+        h1{
+
+            font-size: 3em;
+
+            span{
+
+                text-decoration: underline 5px wavy #3724e3;
+                text-underline-offset: 10px;
+
+            }
+
+        }
+
+        h2{
+
+            font-size: 1.5em;
+            font-weight: 500;
+            padding: 3% 0 10%;
+
+        }
+
+        .join-btn{
+
+            border: 1px solid #3724e3;
+            background-color: #3724e3;
+            text-decoration: none;
+            filter: drop-shadow(-5px 10px 10px #2b25d93c);
+            color: white;
+            font-weight: 500;
+            font-size: 1.2em;
+            border-radius: 10px;
+            padding: 1.5% 5%;
+            transition: 0.5s;
+
+        }
+
+        .join-btn:hover{
+
+            border: 1px solid black;
+            background-color: white;
+            color: black;
+            filter: none;
+            border-radius: 10px;
+
+        }
+
+    }
+
+}

@@ -1,43 +1,13 @@
 @import './_main.scss';
-
-* {
-    margin: 0;
-}
-
-.resultDisplay {
-    width: 100vw;
-    height: 20vh;
-    border-bottom: 1px black solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-        margin: 2%;
-        border-radius: 100%;
-        outline: 1px black solid;
-        height: 12vh;
-    }
-
-    p {
-        font-size: 1.2em;
-    }
-
-    #result {
-        margin: 4%;
-        font-size: 1.5em;
-        font-weight: 800;
-    }
-}
-
+@import './variables/_variables.scss';
 .innerNav {
-    width: 100vw;
     height: 5vh;
-    border-bottom: 1px black solid;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
+    margin: 0;
+    padding: 1.5% 3%;
+    border-bottom: 1px solid black;
     ul {
         display: flex;
         align-items: center;
@@ -47,7 +17,8 @@
             align-items: center;
             list-style: none;
             font-size: 1.2em;
-            margin-left: 6%;
+            font-weight: 700;
+            margin-left: 20%;
             text-align: center;
             height: 5vh;
 
@@ -63,38 +34,51 @@
     display: flex;
     .renderArea {
         width: 60%;
-        border-right: 1px solid black;
-
+        background-color: var(--gray);
         .card {
-            margin: 1% 5%;
-            border: 1px solid black;
+            margin: 4% 5%;
             width: 35%;
+            background-color: var(--white);
+            border-radius:20px;
+            padding: 0 0 3% 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
+            filter: drop-shadow(-10px 10px 10px var(--shade-purple));
             .title {
-                padding: 2%;
+                border-radius: 20px 20px 0 0;
+                padding: 3% 5%;
+                width: 90%;
+                background-color: var(--white);
                 display: flex;
+                flex-direction: row;
                 justify-content: space-between;
+                z-index: 2;
 
                 p {
-                    font-size: 1.5em;
+                    font-size: 1.2em;
+                    font-weight: 700;
                 }
 
                 .minuto {
-                    font-weight: 600;
+                    font-weight: 500;
                 }
+
             }
 
             p.info {
-                padding: 2%;
-                border-top: 1px solid black;
+                padding: 3% 5%;
                 font-size: 1.2em;
             }
         }
     }
     .sideData{
-        width: 40%;
+        max-width: 39%;
         padding-left: 1%;
         .about{
+            padding: 3% 5%;
             height: 25vh;
             h3{
                 display: flex;
@@ -121,19 +105,18 @@
             align-items: center;
             justify-content: center;
 
-            img{
-                width: 10%;
-                border-radius: 100%;
-                border: 1px solid black;
-            }
+          
             p{
               margin: 4%;  
               font-weight: 700;
             }
         }
         button{
+            @include primary-color-a-button;
             margin: 5%;
-            padding: 2%;
+        }
+        button:hover{
+            @include primary-hover-color-a-button;
         }
     }
     .post{
@@ -171,13 +154,7 @@
             }
         }
     }
-    .ad{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        img{
-            width: 80%;
-            margin: 0;
-        }
-    }
+  
+     
+    
 }

@@ -109,6 +109,33 @@ header nav .header-nav-container-2 button:hover {
   transform: rotate(90deg);
 }
 
+footer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--black);
+  color: var(--white);
+  height: 12vh;
+  width: 100%;
+  bottom: 0;
+}
+footer img {
+  width: 10%;
+  height: 3vh;
+}
+footer .texts {
+  width: 12%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .copyright {
+  color: var(--gray);
+}
+
 * {
   font-family: "Manrope", sans-serif;
 }
@@ -124,7 +151,7 @@ body .main {
   flex-direction: column;
   align-items: center;
   border: 1px solid #000;
-  width: 25%;
+  width: 30%;
   height: 55vh;
   text-align: left;
 }
@@ -189,8 +216,8 @@ body .main .form form .div-button {
   margin-top: 2%;
 }
 body .main .form form .div-button .button {
-  height: 45px;
-  width: 100px;
+  height: 5vh;
+  width: 40%;
   border: 1px solid var(--main-purple);
   background-color: var(--main-purple);
   filter: drop-shadow(-5px 10px 10px var(--shade-purple));
@@ -205,30 +232,4 @@ body .main .form form .div-button .button:hover:hover {
   color: var(--black);
   filter: none;
   border-radius: 10px;
-}
-body footer {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--black);
-  color: var(--white);
-  height: 12vh;
-  width: 100%;
-  top: 88vh;
-}
-body footer img {
-  width: 10%;
-  height: 3vh;
-}
-body footer .texts {
-  width: 12%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-body footer .copyright {
-  color: var(--gray);
 }/*# sourceMappingURL=sign-up.css.map */

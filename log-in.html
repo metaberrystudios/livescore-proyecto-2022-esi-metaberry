@@ -27,30 +27,32 @@
             </nav>
         </header>
 
-        <div class="main">
-            
-            <div class="log-in">
-                <h2>Log In</h2>
+        <div class="general">           
+            <div class="main">
+                
+                <div class="log-in">
+                    <h2>Log In</h2>
+                </div>
+                
+                <div class="form"> 
+                    <form action="log-in.php" method="post">
+                        
+                        <label><input class="form-input-text" type="text" name="email" id="email" placeholder="Email"></label>
+                        <label><input class="form-input-text" type="password" name="password" id="password" placeholder="Password"></label>
+                        <label><input type="checkbox" name="remember-me" id="remember-me"> Remember Me</label>
+                        
+                        <div class="div-button">
+                            <input class="button" type="submit" value="Log in"> 
+                        </div>
+    
+                    </form>
+                </div>
+                
+                <div class="sing-up-section">
+                    <p>Don't have an account? <a href="sign-up.html">Sign up</a></p>
+                </div>
+    
             </div>
-            
-            <div class="form"> 
-                <form action="log-in.php" method="post">
-                    
-                    <label><input class="form-input-text" type="text" name="email" id="email" placeholder="Email"></label>
-                    <label><input class="form-input-text" type="password" name="password" id="password" placeholder="Password"></label>
-                    <label><input type="checkbox" name="remember-me" id="remember-me"> Remember Me</label>
-                    
-                    <div class="div-button">
-                        <input class="button" type="submit" value="Log in"> 
-                    </div>
-
-                </form>
-            </div>
-            
-            <div class="sing-up-section">
-                <p>Don't have an account? <a href="sign-up.html">Sign up</a></p>
-            </div>
-
         </div>
 
         <footer>

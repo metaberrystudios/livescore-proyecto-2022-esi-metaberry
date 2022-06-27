@@ -6,9 +6,9 @@
 }
 
 header {
+  height: 5vh;
   padding: 1% 1.5%;
   background-color: rgb(255, 255, 255);
-  filter: drop-shadow(0 10px 10px rgba(43, 37, 217, 0.1098039216));
 }
 header nav {
   display: flex;

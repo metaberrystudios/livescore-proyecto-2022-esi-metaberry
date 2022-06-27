@@ -5,12 +5,11 @@
     margin: 0;
 }
 .resultDisplay{
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-        border-bottom: 1px black solid;
+    border-bottom: 1px black solid;
 
     .player{
         width: 50%;
@@ -23,7 +22,7 @@
           margin-right: 30%;
         }
         ul{
-            width: 40%;
+            width: 30%;
             display: flex;
             justify-content: space-between;
             li{

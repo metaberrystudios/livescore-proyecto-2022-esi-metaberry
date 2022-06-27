@@ -5,30 +5,20 @@
 
 }
 
-header{
-    width: 97%;
-    height: 5vh;
-    margin-bottom: 5%;
-    border-bottom: 1px solid #000;
-    nav{
-        padding: 0 2% 0 2%;
-    }
-
-}
-
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+ 
     
 
     .main{
+        margin-top: 2%;
         display: flex;
         flex-direction: column;
         align-items: center;
         border: 1px solid #000;
-        width: 25%;
+        width: 30%;
         height: 55vh;
         text-align: left;
 
@@ -53,8 +43,7 @@ body{
             border-left: none;
             border-right: none;
             a{
-                color: black;
-                text-decoration: none;
+                @include set-a-link;
                 font-weight: bold;
             }
             
@@ -98,11 +87,12 @@ body{
                     margin-top: 2%;
 
                     .button{
-                        height: 45px;
-                        width: 100px;
-                        border: none;
-                        color: white;
-                        background-color: rgb(43, 42, 42);
+                        height: 5vh;
+                        width: 40%;
+                        @include primary-color-a-button;
+                        &:hover{
+                            @include primary-hover-color-a-button;
+                        }
                     }
                 }
 
@@ -110,36 +100,4 @@ body{
             
         }
     }
-
-    footer{
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        background-color: rgb(43, 42, 42);
-        color: white;
-        height: 12vh;
-        width: 100%;
-        top: 88vh;
-
-        img{
-            width: 10%;
-            height: 3vh;
-        }
-
-        .texts{
-            
-            width: 12%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .copyright{
-            color: gray;
-        }
-    }
-    
 }

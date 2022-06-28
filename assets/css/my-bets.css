@@ -138,4 +138,24 @@ footer .copyright {
 
 * {
   font-family: "Manrope", sans-serif;
+}
+
+p {
+  font-size: 1.5;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60vh;
+}
+main .points {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+main .points h2 {
+  font-size: 1.5em;
 }/*# sourceMappingURL=my-bets.css.map */
